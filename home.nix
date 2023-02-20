@@ -6,5 +6,15 @@
     programs.home-manager.enable = true;
 
     home.packages = [
+        pkgs.bottom
+        pkgs.bat
+        pkgs.xplr
+        pkgs.devbox
+        pkgs.direnv
+        pkgs.exa
+        pkgs.gum
+        pkgs.fzf
+        pkgs.zoxide
+        pkgs.ripgrep
     ];
 }
