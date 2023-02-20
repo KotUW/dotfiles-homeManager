@@ -6,10 +6,8 @@
     programs.home-manager.enable = true;
 
     home.packages = [
-        # pkgs.bottom
         pkgs.xplr
         pkgs.devbox
-        pkgs.direnv
         pkgs.exa
         pkgs.gum
         pkgs.fzf
@@ -49,4 +47,10 @@
             };
         };
     };
+
+    programs.direnv = {
+        enable = true;
+        enableFishIntegration = true;
+    };
+    
 }
