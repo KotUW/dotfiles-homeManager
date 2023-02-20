@@ -48,7 +48,7 @@
 
     programs.direnv = {
         enable = true;
-        enableFishIntegration = true;
+        # enableFishIntegration = true;
     };
 
     programs.exa = {
@@ -60,5 +60,17 @@
         enable = true;
         enableFishIntegration = true;
         fileWidgetCommand = "fd --type f";
+    };
+
+    programs.fish = {
+        enable = true;
+        shellAbbrs = {
+            q = "exit";
+            c = "clear";
+            cat = "bat";
+            lg = "gitui";
+            subl = "DRI_PRIME subl .";
+            xcd = "cd (xplr --print-pwd-as-result)";
+        };
     };
 }
