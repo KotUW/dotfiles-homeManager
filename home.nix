@@ -6,8 +6,7 @@
     programs.home-manager.enable = true;
 
     home.packages = [
-        pkgs.bottom
-        # pkgs.bat
+        # pkgs.bottom
         pkgs.xplr
         pkgs.devbox
         pkgs.direnv
@@ -32,6 +31,22 @@
         enable = true;
         config = {
             theme = "Dracula";
+        };
+    };
+
+    programs.bottom = {
+        enable = true;
+        settings = {
+            flags = {
+                dot_marker = false;
+                temperature_type = "c";
+                battery = true;
+                tree = true;
+            };
+
+            colors = {
+                low_battery_color = "red";
+            };
         };
     };
 }
