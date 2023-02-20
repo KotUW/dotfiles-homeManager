@@ -8,7 +8,6 @@
     home.packages = [
         pkgs.xplr
         pkgs.devbox
-        pkgs.exa
         pkgs.gum
         pkgs.fzf
         pkgs.zoxide
@@ -51,6 +50,11 @@
     programs.direnv = {
         enable = true;
         enableFishIntegration = true;
+    };
+
+    programs.exa = {
+        enable = true;
+        enableAliases = true;
     };
     
 }
