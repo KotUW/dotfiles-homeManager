@@ -7,7 +7,7 @@
 
     home.packages = [
         pkgs.bottom
-        pkgs.bat
+        # pkgs.bat
         pkgs.xplr
         pkgs.devbox
         pkgs.direnv
@@ -17,4 +17,21 @@
         pkgs.zoxide
         pkgs.ripgrep
     ];
+
+    # Git conf
+    programs.git = {
+        enable = true;
+        userName = "kotuw";
+        userEmail = "46974369+KotUW@users.noreply.github.com";
+        delta.enable = true;
+    };
+
+    programs.gitui.enable = true;
+
+    programs.bat = {
+        enable = true;
+        config = {
+            theme = "Dracula";
+        };
+    };
 }
