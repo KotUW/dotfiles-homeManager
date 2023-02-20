@@ -9,7 +9,6 @@
         pkgs.xplr
         pkgs.devbox
         pkgs.gum
-        pkgs.fzf
         pkgs.zoxide
         pkgs.ripgrep
     ];
@@ -57,4 +56,9 @@
         enableAliases = true;
     };
     
+    programs.fzf = {
+        enable = true;
+        enableFishIntegration = true;
+        fileWidgetCommand = "fd --type f";
+    };
 }
