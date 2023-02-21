@@ -10,6 +10,8 @@
         pkgs.devbox
         pkgs.gum
         pkgs.ripgrep
+        pkgs.cachix
+        pkgs.fd
     ];
 
     # Git conf
