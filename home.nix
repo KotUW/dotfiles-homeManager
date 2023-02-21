@@ -79,4 +79,6 @@
         enable = true;
         enableFishIntegration = true;
     };
+
+    # home.file.".config/wezterm/wezterm.lua".source =  ./config/wezterm.lua ;
 }
