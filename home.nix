@@ -12,6 +12,7 @@
         pkgs.ripgrep
         pkgs.cachix
         pkgs.fd
+        pkgs.cargo-binstall
     ];
 
     # Git conf
