@@ -9,7 +9,6 @@
         pkgs.xplr
         pkgs.devbox
         pkgs.gum
-        pkgs.zoxide
         pkgs.ripgrep
     ];
 
@@ -72,5 +71,10 @@
             subl = "DRI_PRIME subl .";
             xcd = "cd (xplr --print-pwd-as-result)";
         };
+    };
+
+    programs.zoxide = {
+        enable = true;
+        enableFishIntegration = true;
     };
 }
