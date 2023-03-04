@@ -12,7 +12,6 @@
         pkgs.ripgrep
         pkgs.cachix
         pkgs.fd
-        pkgs.cargo-binstall
     ];
 
     # Git conf
@@ -73,6 +72,7 @@
             lg = "gitui";
             subl = "DRI_PRIME subl .";
             xcd = "cd (xplr --print-pwd-as-result)";
+            bpython = "nix run nixpkgs#python310Packages.bpython"
         };
     };
 
@@ -80,6 +80,4 @@
         enable = true;
         enableFishIntegration = true;
     };
-
-    # home.file.".config/wezterm/wezterm.lua".source =  ./config/wezterm.lua ;
 }
