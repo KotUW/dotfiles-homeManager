@@ -1,3 +1,7 @@
+# QUICK LINKS    
+#  |=> [103] Fish Abbrivations (allias)
+#  |=> [16] programs
+
 {pkgs, ...}: {
     home.username = "kotuw";
     home.homeDirectory = "/home/kotuw";
@@ -23,33 +27,6 @@
         delta.enable = true;
     };
 
-    programs.gitui = {
-        enable = true;
-        theme = ''(
-                selected_tab: Reset,
-                command_fg: White,
-                selection_bg: DarkGray,
-                selection_fg: White,
-                cmdbar_bg: Black,
-                cmdbar_extra_lines_bg: Black,
-                disabled_fg: DarkGray,
-                diff_line_add: Green,
-                diff_line_delete: Red,
-                diff_file_added: LightGreen,
-                diff_file_removed: LightRed,
-                diff_file_moved: LightMagenta,
-                diff_file_modified: Yellow,
-                commit_hash: Magenta,
-                commit_time: LightCyan,
-                commit_author: Green,
-                danger_fg: Red,
-                push_gauge_bg: Blue,
-                push_gauge_fg: Reset,
-                tag_fg: LightMagenta,
-                branch_fg: LightYellow,
-            )
-        '';
-    };
 
     programs.bat = {
         enable = true;
@@ -99,13 +76,43 @@
             lg = "gitui";
             subl = "DRI_PRIME subl .";
             xcd = "cd (xplr --print-pwd-as-result)";
-            bpython = "nix run nixpkgs#python310Packages.bpython";
-            top = "btm -b"
+            py = "nix run nixpkgs#python310Packages.bpython";
+            top = "btm -b";
+            lsp-nix = "nix shell nixpkgs#nil";
+            lsp-py = "nix shell nixpkgs#python310Packages.python-lsp-server";
         };
     };
 
     programs.zoxide = {
         enable = true;
         enableFishIntegration = true;
+    };
+
+    programs.gitui = {
+        enable = true;
+        theme = ''(
+                selected_tab: Reset,
+                command_fg: White,
+                selection_bg: DarkGray,
+                selection_fg: White,
+                cmdbar_bg: Black,
+                cmdbar_extra_lines_bg: Black,
+                disabled_fg: DarkGray,
+                diff_line_add: Green,
+                diff_line_delete: Red,
+                diff_file_added: LightGreen,
+                diff_file_removed: LightRed,
+                diff_file_moved: LightMagenta,
+                diff_file_modified: Yellow,
+                commit_hash: Magenta,
+                commit_time: LightCyan,
+                commit_author: Green,
+                danger_fg: Red,
+                push_gauge_bg: Blue,
+                push_gauge_fg: Reset,
+                tag_fg: LightMagenta,
+                branch_fg: LightYellow,
+            )
+        '';
     };
 }
