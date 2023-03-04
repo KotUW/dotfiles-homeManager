@@ -1,0 +1,20 @@
+theme = "dracula_at_night"
+
+[editor]
+cursorline = true
+color-modes = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.indent-guides]
+render = true
+
+# Using ALT-/ instead of C-/. As Can't change CTRL bindings right now.
+[keys.normal]
+"A-/" = "toggle_comments"
+# "C-c" = "no_op"
+
