@@ -28,13 +28,6 @@
     };
 
 
-    programs.bat = {
-        enable = true;
-        config = {
-            theme = "Dracula";
-        };
-    };
-
     programs.bottom = {
         enable = true;
         settings = {
@@ -51,16 +44,6 @@
         };
     };
 
-    programs.direnv = {
-        enable = true;
-        # enableFishIntegration = true;
-    };
-
-    programs.exa = {
-        enable = true;
-        enableAliases = true;
-    };
-    
     programs.fzf = {
         enable = true;
         enableFishIntegration = true;
@@ -88,6 +71,29 @@
         enableFishIntegration = true;
     };
 
+    home.file."kitty" = {
+        enable = true;
+        target = ".config/kitty/kitty.conf";
+        source = ./df/kitty.conf;
+    };
+
+    programs.bat = {
+        enable = true;
+        config = {
+            theme = "Dracula";
+        };
+    };
+
+    programs.direnv = {
+        enable = true;
+        # enableFishIntegration = true;
+    };
+
+    programs.exa = {
+        enable = true;
+        enableAliases = true;
+    };
+    
     programs.gitui = {
         enable = true;
         theme = ''(

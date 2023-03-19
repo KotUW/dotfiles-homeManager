@@ -8,7 +8,9 @@ hm-switch:
     home-manager switch
 
 clean:
-    fd -td -E util.py . 'config/' -X rm -dr
+    fd -td --maxdepth 1 . 'config/' -X rm -dr
+    fd -tf . 'df/' -X rm -f
 
 pop: clean
     ./utils/util.py
+    ./utils/cmt2nocmt_kitty.sh
