@@ -73,10 +73,17 @@
         enableFishIntegration = true;
     };
 
-    home.file."kitty" = {
-        enable = true;
-        target = ".config/kitty/kitty.conf";
-        source = ./df/kitty/kitty.conf;
+    home.file = {
+        "kitty" = {
+            enable = true;
+            target = ".config/kitty/kitty.conf";
+            source = ./df/kitty/kitty.conf;
+        };
+        "xplr" = {
+            enable = true;  
+            target = ".config/xplr/init.lua";
+            source = ./df/xplr/init.lua;
+        };
     };
 
     programs.bat = {

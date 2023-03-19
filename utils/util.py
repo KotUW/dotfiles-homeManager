@@ -3,17 +3,11 @@
 from shutil import copytree
 from os import getcwd
 
-programs = [
-    "wezterm",
-    "helix",
-    "nix",
-]
 
-print("[LOG] Starting Copying into ./config/",)
+programs = []
+programs.append(input("Program to copy conf. Of:"))
 
 for p in programs:
-    print("[INFO] Copying files for {}".format(p))
-    
     srcDir = "/home/kotuw/.config/{}".format(p)
     dstDir = "./config/{}/".format(p)
     copytree(srcDir, dstDir, True, dirs_exist_ok=True)
