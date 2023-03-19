@@ -74,7 +74,7 @@
     home.file."kitty" = {
         enable = true;
         target = ".config/kitty/kitty.conf";
-        source = ./df/kitty.conf;
+        source = ./df/kitty/kitty.conf;
     };
 
     programs.bat = {
