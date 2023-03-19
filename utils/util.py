@@ -7,7 +7,6 @@ programs = [
     "wezterm",
     "helix",
     "nix",
-    "kitty",
 ]
 
 print("[LOG] Starting Copying into ./config/",)

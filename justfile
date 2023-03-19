@@ -8,8 +8,7 @@ hm-switch:
     home-manager switch
 
 clean:
-    fd -td --maxdepth 1 . 'config/' -X rm -dr
+    fd -td -I --maxdepth 1 . 'config/' -X rm -dr
 
-pop: clean
+pop: 
     ./utils/util.py
-    ./utils/cmt2nocmt_kitty.sh
