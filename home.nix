@@ -79,10 +79,17 @@
             target = ".config/kitty/kitty.conf";
             source = ./df/kitty/kitty.conf;
         };
+
         "xplr" = {
             enable = true;  
             target = ".config/xplr/init.lua";
             source = ./df/xplr/init.lua;
+        };
+        
+        "wezterm" = {
+            enable = true;  
+            target = ".config/wezterm/wezterm.lua";
+            source = ./df/wezterm/wezterm.lua;
         };
     };
 
