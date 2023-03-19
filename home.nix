@@ -17,6 +17,8 @@
         pkgs.cachix
         pkgs.fd
         pkgs.just
+        # pkgs.zellij
+        pkgs.python310Packages.pipx
     ];
 
     # Git conf
