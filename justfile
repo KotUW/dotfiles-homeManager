@@ -9,7 +9,6 @@ hm-switch:
 
 clean:
     fd -td --maxdepth 1 . 'config/' -X rm -dr
-    fd -tf . 'df/' -X rm -f
 
 pop: clean
     ./utils/util.py
