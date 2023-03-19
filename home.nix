@@ -87,7 +87,7 @@
         };
         
         "wezterm" = {
-            enable = true;  
+            enable = false;  
             target = ".config/wezterm/wezterm.lua";
             source = ./df/wezterm/wezterm.lua;
         };
