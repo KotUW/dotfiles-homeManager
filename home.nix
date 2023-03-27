@@ -17,6 +17,7 @@
         pkgs.cachix
         pkgs.fd
         pkgs.just
+        pkgs.glow
         # pkgs.zellij
         pkgs.python310Packages.pipx
     ];
