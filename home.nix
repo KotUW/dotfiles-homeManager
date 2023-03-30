@@ -60,7 +60,7 @@
             c = "clear";
             cat = "bat";
             lg = "gitui";
-            subl = "DRI_PRIME subl .";
+            subl = "DRI_PRIME=1 subl .";
             xcd = "cd (xplr --print-pwd-as-result)";
             py = "nix run nixpkgs#python310Packages.bpython";
             top = "btm -b";

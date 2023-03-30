@@ -21,15 +21,19 @@ return {
     { key = "t", mods = 'CTRL|SHIFT', action = wezterm.action.SpawnTab 'CurrentPaneDomain' },
     { key = "c", mods = 'CTRL|SHIFT', action = wezterm.action.CopyTo 'Clipboard' },
     { key = "v", mods = 'CTRL|SHIFT', action = wezterm.action.PasteFrom'Clipboard' },
+    { key = 'LeftArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Left' },
+    { key = 'RightArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Right' },
+    { key = 'UpArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Up' },
+    { key = 'DownArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Down' },
   },
 
   -- Starts home-manager managed nix shell.
   default_prog = {"/home/kotuw/.nix-profile/bin/fish", "-l"},
 
-  -- color_scheme = "Nocturnal Winter",
+  color_scheme = "Nocturnal Winter",
   -- color_scheme = "Dark Pastel",
   -- color_scheme = "carbonfox",
-  color_scheme = "DotGov",
+  -- color_scheme = "DotGov",
 
   -- Window
   window_padding = {
