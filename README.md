@@ -15,3 +15,9 @@
 4. profit.
 
 Follow same for Removing stuff.
+
+ # Nix profile 
+
+Install :=>
+
+`nix profile install git+https://github.com/helix-editor/helix/`
