@@ -1,0 +1,897 @@
+{
+	"file_history":
+	[
+		"/home/kotuw/user/learn/frontend/frontend.sublime-project",
+		"/home/kotuw/user/learn/frontend/sql/models.py",
+		"/home/kotuw/user/learn/rust/gg/src/main.rs",
+		"/home/kotuw/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/str/mod.rs",
+		"/home/kotuw/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.8.5/src/rng.rs",
+		"/home/kotuw/.config/sublime-text/Packages/LSP/Default.sublime-keymap",
+		"/home/kotuw/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
+		"/home/kotuw/user/learn/rust/gg/Cargo.toml",
+		"/home/kotuw/user/learn/rust/gg/Cargo.lock",
+		"/home/kotuw/.config/sublime-text/Packages/Terminus/Default.sublime-keymap",
+		"/home/kotuw/.config/sublime-text/Packages/User/Terminus.sublime-settings",
+		"/home/kotuw/.config/sublime-text/Packages/Terminus/Terminus.sublime-settings"
+	],
+	"folder_history":
+	[
+		"/home/kotuw/user/learn/frontend",
+		"/home/kotuw/user/learn/rust/gg"
+	],
+	"last_version": 4143,
+	"last_window_id": 7,
+	"log_indexing": false,
+	"next_update_check": 1680303431,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 600.0,
+		"new_window_maximized": true,
+		"new_window_position":
+		[
+			0.0,
+			27.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"Ba",
+						"BaseModel"
+					],
+					[
+						"to",
+						"try_into() (as TryInto)"
+					],
+					[
+						"O",
+						"Ordering"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"dia",
+						"LSP: Toggle Diagnostics Panel"
+					],
+					[
+						"term",
+						"Terminus: Close All"
+					],
+					[
+						"spac",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"lsp",
+						"LSP: Goto Definition…"
+					],
+					[
+						"lsp bin",
+						"Preferences: LSP Key Bindings"
+					],
+					[
+						"code",
+						"LSP: Code Action…"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"keyb",
+						"Preferences: Terminus Key Bindings"
+					],
+					[
+						"termi",
+						"Preferences: Terminus Settings"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"the",
+						"UI: Select Theme"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 124.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/kotuw/user/learn/frontend/frontend.sublime-project",
+				"/home/kotuw/user/learn/frontend/sql/models.py",
+				"/home/kotuw/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/str/mod.rs",
+				"/home/kotuw/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.8.5/src/rng.rs",
+				"/home/kotuw/user/learn/rust/gg/Cargo.toml",
+				"/home/kotuw/user/learn/rust/gg/Cargo.lock"
+			],
+			"find":
+			{
+				"height": 26.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 26.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.Terminus":
+			{
+				"height": 235.0
+			},
+			"output.diagnostics":
+			{
+				"height": 120.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 48.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"sc",
+						"sql/schema.py"
+					],
+					[
+						"",
+						"sql/models.py"
+					],
+					[
+						"tom",
+						"Cargo.toml"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 800.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"Ba",
+						"BaseModel"
+					],
+					[
+						"to",
+						"try_into() (as TryInto)"
+					],
+					[
+						"O",
+						"Ordering"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							11,
+							1,
+							"reindent",
+							null,
+							"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+						],
+						[
+							15,
+							2,
+							"left_delete",
+							null,
+							"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACQ",
+							"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAEBA"
+						]
+					]
+				},
+				{
+					"contents": "from pydantic import BaseModel\n\nclass ItemBase(BaseModel):\n\t",
+					"file": "sql/schema.py",
+					"file_size": 0,
+					"file_write_time": 133247056292565790,
+					"settings":
+					{
+						"buffer_size": 60,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							1,
+							1,
+							"insert",
+							{
+								"characters": "from"
+							},
+							"BAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							2,
+							1,
+							"insert",
+							{
+								"characters": " p"
+							},
+							"AgAAAAQAAAAAAAAABQAAAAAAAAAAAAAABQAAAAAAAAAGAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							3,
+							1,
+							"insert",
+							{
+								"characters": "yd"
+							},
+							"AgAAAAYAAAAAAAAABwAAAAAAAAAAAAAABwAAAAAAAAAIAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							4,
+							1,
+							"insert",
+							{
+								"characters": "a"
+							},
+							"AQAAAAgAAAAAAAAACQAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							5,
+							1,
+							"insert",
+							{
+								"characters": "nti"
+							},
+							"AwAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAwAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							6,
+							1,
+							"insert",
+							{
+								"characters": "c"
+							},
+							"AQAAAAwAAAAAAAAADQAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							7,
+							1,
+							"insert",
+							{
+								"characters": " import"
+							},
+							"BwAAAA0AAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAASAAAAAAAAAAAAAAASAAAAAAAAABMAAAAAAAAAAAAAABMAAAAAAAAAFAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							8,
+							1,
+							"insert",
+							{
+								"characters": " "
+							},
+							"AQAAABQAAAAAAAAAFQAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAFAAAAAAAAAAUAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							9,
+							1,
+							"insert",
+							{
+								"characters": "BaseModel"
+							},
+							"CQAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAaAAAAAAAAAAAAAAAaAAAAAAAAABsAAAAAAAAAAAAAABsAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAdAAAAAAAAAAAAAAAdAAAAAAAAAB4AAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							13,
+							1,
+							"insert",
+							{
+								"characters": "\n\ncl"
+							},
+							"BAAAAB4AAAAAAAAAHwAAAAAAAAAAAAAAHwAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACEAAAAAAAAAAAAAACEAAAAAAAAAIgAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							14,
+							1,
+							"insert",
+							{
+								"characters": "ass"
+							},
+							"AwAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							15,
+							1,
+							"insert",
+							{
+								"characters": " Item"
+							},
+							"BQAAACUAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKQAAAAAAAAAAAAAAKQAAAAAAAAAqAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							16,
+							1,
+							"insert",
+							{
+								"characters": "Base"
+							},
+							"BAAAACoAAAAAAAAAKwAAAAAAAAAAAAAAKwAAAAAAAAAsAAAAAAAAAAAAAAAsAAAAAAAAAC0AAAAAAAAAAAAAAC0AAAAAAAAALgAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAKgAAAAAAAAAqAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							17,
+							1,
+							"insert_snippet",
+							{
+								"contents": "($0)"
+							},
+							"AQAAAC4AAAAAAAAAMAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAALgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							18,
+							1,
+							"insert",
+							{
+								"characters": "Ba"
+							},
+							"AgAAAC8AAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAxAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAALwAAAAAAAAAvAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							20,
+							1,
+							"insert_completion",
+							{
+								"completion": "lsp_select_completion {\"index\":2,\"session_name\":\"LSP-pylsp\"}",
+								"format": "command",
+								"keep_prefix": false,
+								"must_insert": false,
+								"trigger": "BaseModel"
+							},
+							"AgAAAC8AAAAAAAAALwAAAAAAAAACAAAAQmEvAAAAAAAAADoAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAMQAAAAAAAAAxAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							21,
+							1,
+							"left_delete",
+							null,
+							"AQAAADkAAAAAAAAAOQAAAAAAAAABAAAAKQ",
+							"AQAAAAAAAAABAAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							22,
+							1,
+							"run_macro_file",
+							{
+								"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+							},
+							"AgAAADgAAAAAAAAAOAAAAAAAAAABAAAAKDgAAAAAAAAAOAAAAAAAAAABAAAAKQ",
+							"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							24,
+							1,
+							"insert",
+							{
+								"characters": ")"
+							},
+							"AQAAADgAAAAAAAAAOQAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAOAAAAAAAAAA4AAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							25,
+							1,
+							"insert",
+							{
+								"characters": " "
+							},
+							"AQAAADkAAAAAAAAAOgAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							26,
+							1,
+							"left_delete",
+							null,
+							"AQAAADkAAAAAAAAAOQAAAAAAAAABAAAAIA",
+							"AQAAAAAAAAABAAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							27,
+							1,
+							"insert",
+							{
+								"characters": ":"
+							},
+							"AQAAADkAAAAAAAAAOgAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							28,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AgAAADoAAAAAAAAAOwAAAAAAAAAAAAAAOwAAAAAAAAA8AAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"dia",
+						"LSP: Toggle Diagnostics Panel"
+					],
+					[
+						"term",
+						"Terminus: Close All"
+					],
+					[
+						"spac",
+						"Indentation: Convert to Spaces"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"lsp",
+						"LSP: Goto Definition…"
+					],
+					[
+						"lsp bin",
+						"Preferences: LSP Key Bindings"
+					],
+					[
+						"code",
+						"LSP: Code Action…"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"keyb",
+						"Preferences: Terminus Key Bindings"
+					],
+					[
+						"termi",
+						"Preferences: Terminus Settings"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"the",
+						"UI: Select Theme"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 124.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/kotuw/user/learn/frontend"
+			],
+			"file_history":
+			[
+				"/home/kotuw/user/learn/frontend/frontend.sublime-project",
+				"/home/kotuw/user/learn/frontend/sql/models.py",
+				"/home/kotuw/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/str/mod.rs",
+				"/home/kotuw/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.8.5/src/rng.rs",
+				"/home/kotuw/user/learn/rust/gg/Cargo.toml",
+				"/home/kotuw/user/learn/rust/gg/Cargo.lock"
+			],
+			"find":
+			{
+				"height": 26.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"lsp_uri": "buffer://sublime/48",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "sql/schema.py",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 60,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										60,
+										60
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										},
+										{
+											"characters": ".",
+											"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+											"server": "LSP-pylsp"
+										}
+									],
+									"lsp_active": true,
+									"lsp_hover_provider_count": 1,
+									"lsp_uri": "file:///home/kotuw/user/learn/frontend/sql/schema.py",
+									"show_definitions": false,
+									"syntax": "Packages/Python/Python.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 26.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.Terminus":
+			{
+				"height": 235.0
+			},
+			"output.diagnostics":
+			{
+				"height": 120.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,664,700,1366,768,0",
+			"project": "frontend.sublime-project",
+			"replace":
+			{
+				"height": 48.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"sc",
+						"sql/schema.py"
+					],
+					[
+						"",
+						"sql/models.py"
+					],
+					[
+						"tom",
+						"Cargo.toml"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 6,
+			"workspace_name": "/home/kotuw/user/learn/frontend/frontend.sublime-workspace"
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/home/kotuw/user/learn/frontend/frontend.sublime-workspace",
+			"/home/kotuw/user/learn/frontend/flake.sublime-workspace"
+		]
+	}
+}
