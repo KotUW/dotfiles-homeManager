@@ -28,6 +28,9 @@
         userName = "kotuw";
         userEmail = "46974369+KotUW@users.noreply.github.com";
         delta.enable = true;
+        extraConfig = {
+         init.defaultBranch = "main";   
+        };
     };
 
 

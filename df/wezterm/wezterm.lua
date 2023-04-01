@@ -11,7 +11,7 @@ return {
   window_frame = { font = font },
 
   -- KeyBindings
-  disable_default_key_bindings = true,
+  -- disable_default_key_bindings = true,
   keys = {
     { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
     { key = 'r', mods = 'CTRL|SHIFT', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
@@ -25,13 +25,14 @@ return {
     { key = 'RightArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Right' },
     { key = 'UpArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Up' },
     { key = 'DownArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Down' },
+    { key = 'f', mods = 'CTRL|SHIFT', action = wezterm.action.ToggleFullScreen },
   },
 
   -- Starts home-manager managed nix shell.
   default_prog = {"/home/kotuw/.nix-profile/bin/fish", "-l"},
 
-  color_scheme = "Nocturnal Winter",
-  -- color_scheme = "Dark Pastel",
+  -- color_scheme = "Nocturnal Winter",
+  color_scheme = "Dark Pastel",
   -- color_scheme = "carbonfox",
   -- color_scheme = "DotGov",
 
@@ -43,5 +44,7 @@ return {
     bottom = "1cell",
   }, 
   adjust_window_size_when_changing_font_size = false,
+
+  enable_kitty_keyboard = true,
   
 }
