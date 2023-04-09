@@ -106,6 +106,12 @@
             target = ".config/wezterm/wezterm.lua";
             source = ./df/wezterm/wezterm.lua;
         };
+        
+        "helix" = {
+            enable = true;  
+            target = ".config/helix/config.toml";
+            source = ./df/helix/config.toml;
+        };
     };
 
     programs.bat = {
