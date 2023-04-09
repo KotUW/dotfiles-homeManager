@@ -1,5 +1,5 @@
 # QUICK LINKS    
-#  |=> [103] Fish Abbrivations (allias)
+#  |=> [59] Fish Abbrivations (allias)
 #  |=> [16] programs
 
 {pkgs, ...}: {
@@ -67,8 +67,6 @@
             xcd = "cd (xplr --print-pwd-as-result)";
             py = "nix run nixpkgs#python310Packages.bpython";
             top = "btm -b";
-            lsp-nix = "nix shell nixpkgs#nil";
-            lsp-py = "nix shell nixpkgs#python310Packages.python-lsp-server";
         };
         # plugins = [
         #     {
