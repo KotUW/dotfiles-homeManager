@@ -107,10 +107,16 @@
             source = ./df/wezterm/wezterm.lua;
         };
         
-        "helix" = {
+        "helix-config" = {
             enable = true;  
             target = ".config/helix/config.toml";
             source = ./df/helix/config.toml;
+        };
+
+        "helix-languages" = {
+            enable = true;
+            target = ".config/helix/languages.toml";
+            source = ./df/helix/languages.toml;
         };
     };
 
