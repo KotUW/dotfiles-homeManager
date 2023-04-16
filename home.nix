@@ -29,7 +29,9 @@
         userEmail = "46974369+KotUW@users.noreply.github.com";
         delta.enable = true;
         extraConfig = {
-         init.defaultBranch = "main";   
+            init.defaultBranch = "main";   
+            gpg.format = "ssh";
+            user.signingkey = "~/.ssh/id_ecdsa.pub";
         };
     };
 
