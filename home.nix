@@ -90,7 +90,7 @@
 
     home.file = {
         "kitty" = {
-            enable = true;
+            enable = false;
             target = ".config/kitty/kitty.conf";
             source = ./df/kitty/kitty.conf;
         };
