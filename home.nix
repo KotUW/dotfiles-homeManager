@@ -95,6 +95,11 @@
             source = ./df/kitty/kitty.conf;
         };
 
+        "foot" = {
+            enable = true;
+            target = ".config/foot/foot.ini";
+            source = ./df/foot/foot.ini;
+        };
         "xplr" = {
             enable = true;  
             target = ".config/xplr/init.lua";
