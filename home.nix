@@ -81,6 +81,9 @@
                 };
             }
         ];
+        functions = {
+          pytyper = "typer $argv run";  
+        };
     };
 
     programs.zoxide = {
