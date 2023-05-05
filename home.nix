@@ -98,22 +98,25 @@
             source = ./df/kitty/kitty.conf;
         };
 
-        "foot" = {
+                "foot" = {
             enable = true;
             target = ".config/foot/foot.ini";
             source = ./df/foot/foot.ini;
         };
+        
+        #Does not work. Wezterm doesn't play nice with symlinked files.
+        "wezterm" = {
+            enable = false;  
+            target = ".config/wezterm/wezterm.lua";
+            source = ./df/wezterm/wezterm.lua;
+        };
+
         "xplr" = {
             enable = true;  
             target = ".config/xplr/init.lua";
             source = ./df/xplr/init.lua;
         };
         
-        "wezterm" = {
-            enable = false;  
-            target = ".config/wezterm/wezterm.lua";
-            source = ./df/wezterm/wezterm.lua;
-        };
         
         "helix-config" = {
             enable = true;  
