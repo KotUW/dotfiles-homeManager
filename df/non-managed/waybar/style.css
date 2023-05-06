@@ -1,4 +1,3 @@
-
 * {
 	border: none;
 	border-radius: 10px;
@@ -126,6 +125,8 @@ window#waybar.hidden {
     }
 }
 
+
+#temperature, 
 #backlight {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -148,7 +149,6 @@ window#waybar.hidden {
 	transition: none;
 	color: #161320;
 	background: #ABE9B3;
-	/*background: #1A1826;*/
 }
 
 #memory {
