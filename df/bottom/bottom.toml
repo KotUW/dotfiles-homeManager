@@ -1,0 +1,26 @@
+[flags]
+  dot_marker = false
+  temperature_type = "c"
+  battery = true
+  tree = true
+  avg_cpu = true
+
+[colors]
+  low_battary_color = "red"
+
+[[row]]
+  ratio = 30
+  [[row.child]]
+    type = "cpu"
+[[row]]
+  ratio = 40
+  [[row.child]]
+    type = "net"
+  [[row.child]]
+    type = "batt"
+[[row]]
+  ratio = 30
+  [[row.child]]
+    type = "mem"  
+  [[row.child]]
+    type = "temp"

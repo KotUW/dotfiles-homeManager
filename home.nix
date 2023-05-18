@@ -38,18 +38,19 @@
 
     programs.bottom = {
         enable = true;
-        settings = {
-            flags = {
-                dot_marker = false;
-                temperature_type = "c";
-                battery = true;
-                tree = true;
-            };
+        # settings = {
+        #     flags = {
+        #         dot_marker = false;
+        #         temperature_type = "c";
+        #         battery = true;
+        #         tree = true;
+        #         avg_cpu = true;
+        #     };
 
-            colors = {
-                low_battery_color = "red";
-            };
-        };
+        #     colors = {
+        #         low_battery_color = "red";
+        #     };
+        # };
     };
 
     programs.fzf = {
@@ -117,6 +118,11 @@
             source = ./df/xplr/init.lua;
         };
         
+        "bottom" = {
+            enable = true;  
+            target = ".config/bottom/bottom.toml";
+            source = ./df/bottom/bottom.toml;
+        };
         
         "helix-config" = {
             enable = true;  
