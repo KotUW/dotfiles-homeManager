@@ -4,4 +4,7 @@
 		"Vintage",
 	],
 	"theme": "Adaptive.sublime-theme",
+	"font_size": 14,
+	"font_face": "JetBrainsMono Nerd Font",
+	"spell_check": true,
 }
