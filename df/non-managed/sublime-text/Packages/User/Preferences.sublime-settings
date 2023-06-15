@@ -7,4 +7,5 @@
 	"font_size": 14,
 	"font_face": "JetBrainsMono Nerd Font",
 	"spell_check": true,
+	"save_on_focus_lost": true,
 }
