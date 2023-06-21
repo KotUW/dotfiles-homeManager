@@ -32,6 +32,7 @@
             init.defaultBranch = "main";   
             gpg.format = "ssh";
             user.signingkey = "~/.ssh/id_ecdsa.pub";
+            core.editor = "hx";
         };
     };
 
