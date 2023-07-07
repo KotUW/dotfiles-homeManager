@@ -18,7 +18,6 @@
         pkgs.fd
         pkgs.just
         pkgs.glow
-        # pkgs.zellij
         pkgs.python310Packages.pipx
     ];
 
@@ -84,7 +83,6 @@
             }
         ];
         functions = {
-          pytyper = "typer $argv run";  
         };
     };
 
@@ -153,6 +151,15 @@
     programs.exa = {
         enable = true;
         enableAliases = true;
+    };
+
+    programs.zellij = {
+        enable = true;
+        # enableFishIntegration = true; doesn't work for unknown reasons.
+        settings = {
+            copy_clipboard = "primary";
+            scrollback_editor = "hx";
+        };
     };
     
     programs.gitui = {
