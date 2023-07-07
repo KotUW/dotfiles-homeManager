@@ -181,5 +181,9 @@
                 branch_fg: LightYellow,
             )
         '';
+        keyConfig = ''(
+                    status_reset_item: Some((code: Char('d'), modifiers: (bits: 0,),)),
+            )
+        '';
     };
 }
