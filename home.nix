@@ -15,8 +15,9 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  programs.btop = {
+    enable = true;
+  };
 
   programs.git = {
     enable = true;
@@ -44,6 +45,12 @@
       c = "clear";
       cat = "bat";
       lg = "gitui";
+    };
+
+    functions = {
+      dcd = {
+        body = "br --only-folders --cmd \"$argv[1];:cd\"";
+      };     
     };
   };
   
@@ -111,12 +118,18 @@
 
   programs.direnv = {
     enable = true;
-    enableFishIntegration = true;
+    # enableFishIntegration = true;
   };
 
   programs.broot = {
     enable = true;
     enableFishIntegration = true;
+    settings = {
+      modal = true;
+      default_flags = "g";
+      show_selection_mark = true;
+      cols_order = [ "mark" "git" "size" "permission" "count" "branch" "name" "dat" ];
+    };
   };
   
   programs.eza = {
