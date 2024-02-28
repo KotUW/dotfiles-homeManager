@@ -1,0 +1,14 @@
+= Dotfiles
+
+Managed using https://nix-community.github.io/home-manager/index.xhtml#sec-flakes-standalone[Home-Manager]. 
+
+= Build
+
+On First run:
+```shell
+nix run home-manager/release-23.11 -- init --switch
+````
+Others:
+```shell
+home-manager switch
+```
