@@ -1,8 +1,10 @@
 = Dotfiles
 
 Managed using https://nix-community.github.io/home-manager/index.xhtml#sec-flakes-standalone[Home-Manager]. 
+Config https://nix-community.github.io/home-manager/options.xhtml[Options]
+	Above, also available in man `home-manager`
 
-= Build
+== Build
 
 On First run:
 ```shell
@@ -12,3 +14,9 @@ Others:
 ```shell
 home-manager switch
 ```
+
+== Directory Structure
+
+- `home.nix` contains most of the configuration. should be Combatible with all other home-mangaer installations.
+- `flake.nix` contains installation instructions for home-manager.
+- `confile/*` For programs that don't have modules yet.
