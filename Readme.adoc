@@ -14,6 +14,9 @@ Others:
 ```shell
 home-manager switch
 ```
+== Consideratios:
+
+- WezTerm Flatpak doesn't work with symlinks. So manual.
 
 == Directory Structure
 

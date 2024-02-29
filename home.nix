@@ -15,6 +15,10 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
+  programs.foot = {
+    enable = true;
+  };
+
   programs.btop = {
     enable = true;
   };
@@ -204,6 +208,13 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  # Doesn't work with flatpak version. And that is also not recommended.
+  xdg.configFile."wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
+  xdg.configFile."wezterm/wezterm.lua".enable = true;
+  # xdg.configFile."kitty/kitty.conf".source = ./confiles/kitty.conf;
+  xdg.configFile."kitty/foot.ini".source = ./confiles/foot.ini;
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
