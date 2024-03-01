@@ -185,8 +185,8 @@
     pkgs.just
     pkgs.rustup
     pkgs.go
-    pkgs.nil # make maybe helix-extra-packages?
-    pkgs.gopls# make maybe helix-extra-packages?
+    pkgs.nil # maybe move to helix-extra-packages?
+    pkgs.gopls# maybe move to helix-extra-packages?
     pkgs.bat
     pkgs.pipx
     pkgs.ltrace
@@ -209,11 +209,13 @@
     # '')
   ];
 
+  xdg.configFile = {
+    "wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
+    "wezterm/wezterm.lua".enable = true;
+    # "kitty/kitty.conf".source = ./confiles/kitty.conf;
+    "foot/foot.ini".source = ./confiles/foot.ini;
+  };
   # Doesn't work with flatpak version. And that is also not recommended.
-  xdg.configFile."wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
-  xdg.configFile."wezterm/wezterm.lua".enable = true;
-  # xdg.configFile."kitty/kitty.conf".source = ./confiles/kitty.conf;
-  xdg.configFile."foot/foot.ini".source = ./confiles/foot.ini;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
