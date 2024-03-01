@@ -9,7 +9,7 @@ Which are also available in man `home-manager`
 On First run:
 ```shell
 nix run home-manager/release-23.11 -- init --switch
-````
+```
 
 
 Others:
