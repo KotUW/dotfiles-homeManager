@@ -8,7 +8,7 @@ Which are also available in man `home-manager`
 
 On First run:
 ```shell
-nix run home-manager/release-23.11 -- init --switch
+nix run . --init --switch
 ```
 
 
@@ -16,13 +16,13 @@ Others:
 ```shell
 home-manager switch
 ```
-== Consideratios:
+== Consideration
 
 - WezTerm Flatpak doesn't work with symlinks. So manual.
 
 == Directory Structure
 
-- `home.nix` contains most of the configuration. should be Combatible with all other home-mangaer installations.
+- `home.nix` contains most of the configuration. Should be Compatible with all other home-manager installations.
 - `flake.nix` contains installation instructions for home-manager.
 - `confile/*` For programs that don't have modules yet.
 - `flake.lock` contains the exact version of home-manager installed in this computer. Could be updated using `nix flake update .`.
