@@ -19,6 +19,7 @@ home-manager switch
 == Consideration
 
 - WezTerm Flatpak doesn't work with symlinks. So manual.
+- `helix` is not being managed RN. As the configuration need to be converted.
 
 == Directory Structure
 
