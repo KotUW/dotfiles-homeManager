@@ -125,7 +125,7 @@
 
   programs.direnv = {
     enable = true;
-    enableFishIntegration = true;
+    # enableFishIntegration = true;
   };
 
   programs.broot = {
@@ -145,7 +145,7 @@
   };
     programs.zellij = {
         enable = true;
-        enableFishIntegration = true; #doesn't work for unknown reasons.
+        # enableFishIntegration = true; # It starts zellij every time. you start fish.
         settings = {
             copy_clipboard = "primary";
             scrollback_editor = "hx";
