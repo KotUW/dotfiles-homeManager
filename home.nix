@@ -125,7 +125,7 @@
 
   programs.direnv = {
     enable = true;
-    # enableFishIntegration = true;
+    enableFishIntegration = true;
   };
 
   programs.broot = {
@@ -199,6 +199,7 @@
     pkgs.hyperfine
     pkgs.hexyl
     pkgs.glow
+    pkgs.xh
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
