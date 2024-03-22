@@ -55,6 +55,9 @@
       dcd = {
         body = "br --only-folders --cmd \"$argv[1];:cd\"";
       };     
+      conf-home = {
+        body = "hx ~/.config/home-manager/home.nix";
+      };
     };
   };
   
@@ -142,10 +145,11 @@
   };
     programs.zellij = {
         enable = true;
-        # enableFishIntegration = true; doesn't work for unknown reasons.
+        enableFishIntegration = true; #doesn't work for unknown reasons.
         settings = {
             copy_clipboard = "primary";
             scrollback_editor = "hx";
+            default_shell  = "/home/evil/.nix-profile/bin/fish";
         };
     };
     
@@ -194,7 +198,7 @@
     pkgs.pijul
     pkgs.hyperfine
     pkgs.hexyl
-    pkgs.dt
+    pkgs.glow
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -210,6 +214,7 @@
   ];
 
   xdg.configFile = {
+  # NOTE don't use flatpak version of wezterm.
     "wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
     "wezterm/wezterm.lua".enable = true;
     # "kitty/kitty.conf".source = ./confiles/kitty.conf;
