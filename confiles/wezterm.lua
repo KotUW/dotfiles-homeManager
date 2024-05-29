@@ -24,8 +24,12 @@ config.hide_tab_bar_if_only_one_tab = true
 config.tab_bar_at_bottom= true
 config.window_frame = { font = font }
 
+config.color_schemes = {
+		["Gnome Light"] = require("gnome"),
+		["Charmful Dark"] = require("charmful"),
+	}
 -- config.color_scheme = 'Alabaster'
--- config.color_scheme = "Nocturnal Winter"
+config.color_scheme = "Charmful Dark"
 -- color_scheme = "Dark Pastel"
 -- color_scheme = "carbonfox"
 -- color_scheme = "DotGov"
@@ -52,6 +56,11 @@ config.keys = {
     { key = 'UpArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Up' },
     { key = 'DownArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Down' },
     
+    { key = 'DownArrow', mods = 'CTRL|ALT', action = wezterm.action.AdjustPaneSize { 'Down', 5 } },
+    { key = 'RightArrow', mods = 'CTRL|ALT', action = wezterm.action.AdjustPaneSize { 'Right', 5 } },
+    { key = 'LeftArrow', mods = 'CTRL|ALT', action = wezterm.action.AdjustPaneSize { 'Left', 5 } },
+    { key = 'UpArrow', mods = 'CTRL|ALT', action = wezterm.action.AdjustPaneSize { 'Up', 5 } },
+    
     { key = 'f', mods = 'CTRL|SHIFT', action = wezterm.action.ToggleFullScreen },
 }
 
@@ -62,35 +71,35 @@ config.default_prog = {"/home/evil/.nix-profile/bin/fish", "-l"}
 
 config.enable_kitty_keyboard = true
 
-config.colors = {
-foreground    = "#ECE1D7",
-background    = "#292522",
-cursor_bg     = "#ECE1D7",
-cursor_border = "#ECE1D7",
-cursor_fg     = "#292522",
-selection_bg  = "#403A36",
-selection_fg  = "#ECE1D7",
-ansi = {
-  "#34302C",
-  "#BD8183",
-  "#78997A",
-  "#E49B5D",
-  "#7F91B2",
-  "#B380B0",
-  "#7B9695",
-  "#C1A78E"
-},
-brights = {
-  "#867462",
-  "#D47766",
-  "#85B695",
-  "#EBC06D",
-  "#A3A9CE",
-  "#CF9BC2",
-  "#89B3B6",
-  "#ECE1D7",
-}
+  -- config.colors = {
+  -- foreground    = "#ECE1D7",
+  -- background    = "#292522",
+  -- cursor_bg     = "#ECE1D7",
+  -- cursor_border = "#ECE1D7",
+  -- cursor_fg     = "#292522",
+  -- selection_bg  = "#403A36",
+  -- selection_fg  = "#ECE1D7",
+  -- ansi = {
+  --   "#34302C",
+  --   "#BD8183",
+  --   "#78997A",
+  --   "#E49B5D",
+  --   "#7F91B2",
+  --   "#B380B0",
+  --   "#7B9695",
+  --   "#C1A78E"
+  -- },
+  -- brights = {
+  --   "#867462",
+  --   "#D47766",
+  --   "#85B695",
+  --   "#EBC06D",
+  --   "#A3A9CE",
+  --   "#CF9BC2",
+  --   "#89B3B6",
+  --   "#ECE1D7",
+  -- }
 
-}
+-- }
 
 return config
