@@ -8,7 +8,7 @@ Which are also available in man `home-manager`
 
 On First run:
 ```shell
-nix run home-manager/release-23.11 init --switch
+nix run home-manager/release-23.11 init -- --switch
 ```
 ^ Remember to change the version in here if you ever chage the version. Also it would probably be better to delete the flake file when dooing so.
 

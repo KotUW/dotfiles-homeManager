@@ -125,7 +125,6 @@
 
   programs.direnv = {
     enable = true;
-    # enableFishIntegration = true;
   };
 
   programs.broot = {
@@ -135,7 +134,7 @@
       modal = true;
       default_flags = "g";
       show_selection_mark = true;
-      cols_order = [ "mark" "git" "size" "permission" "count" "branch" "name" "dat" ];
+      cols_order = [ "mark" "git" "size" "permission" "count" "branch" "name" ];
     };
   };
   
@@ -144,7 +143,7 @@
       enableAliases = true;
   };
     programs.zellij = {
-        enable = true;
+        enable = false;
         # enableFishIntegration = true; # It starts zellij every time. you start fish.
         settings = {
             copy_clipboard = "primary";
@@ -192,10 +191,8 @@
     pkgs.nil # maybe move to helix-extra-packages?
     pkgs.gopls# maybe move to helix-extra-packages?
     pkgs.bat
-    pkgs.pipx
     pkgs.ltrace
     pkgs.catgirl
-    pkgs.pijul
     pkgs.hyperfine
     pkgs.hexyl
     pkgs.glow
