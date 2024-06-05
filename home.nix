@@ -53,10 +53,13 @@
 
     functions = {
       dcd = {
-        body = "br --only-folders --cmd \"$argv[1];:cd\"";
+        body = "cd ~/work; br --only-folders --cmd \"$argv[1];:cd\"";
       };     
       conf-home = {
         body = "hx ~/.config/home-manager/home.nix";
+      };
+      mktmp = {
+        body = "cd (mktemp -d) ";
       };
     };
   };
@@ -215,6 +218,8 @@
   # NOTE don't use flatpak version of wezterm.
     "wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
     "wezterm/wezterm.lua".enable = true;
+    "wezterm/charmful.lua".source = ./confiles/charmful.lua;
+    "wezterm/charmful.lua".enable = true;
     # "kitty/kitty.conf".source = ./confiles/kitty.conf;
     "foot/foot.ini".source = ./confiles/foot.ini;
   };
