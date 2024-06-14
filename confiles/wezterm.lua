@@ -13,11 +13,11 @@ if wezterm.config_builder then
 end
 
 -- Font
--- config.font = wezterm.font('Fira Code')
-config.font = wezterm.font('LiterationMono Nerd Font')
+config.font = wezterm.font('Fira Code')
+-- config.font = wezterm.font('LiterationMono Nerd Font')
+-- config.harfbuzz_features = { "zero" , "ss01", "cv05" }
 
-config.harfbuzz_features = { "zero" , "ss01", "cv05" }
-config.font_size = 12
+config.font_size = 18
 
 -- Tab bar
 config.hide_tab_bar_if_only_one_tab = true
