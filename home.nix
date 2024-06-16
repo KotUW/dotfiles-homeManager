@@ -53,7 +53,7 @@
 
     functions = {
       dcd = {
-        body = "cd ~/work; br --only-folders --cmd \"$argv[1];:cd\"";
+        body = "pushd ~/work; br --only-folders --cmd \"$argv[1];:cd\"";
       };     
       conf-home = {
         body = "hx ~/.config/home-manager/home.nix";
@@ -199,6 +199,7 @@
     pkgs.hyperfine
     pkgs.hexyl
     pkgs.glow
+    pkgs.gum
     pkgs.xh
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
