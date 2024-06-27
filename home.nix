@@ -53,13 +53,16 @@
 
     functions = {
       dcd = {
-        body = "cd ~/work; br --only-folders --cmd \"$argv[1];:cd\"";
+        body = "pushd ~/work; br --only-folders --cmd \"$argv[1];:cd\"";
       };     
       conf-home = {
         body = "hx ~/.config/home-manager/home.nix";
       };
       mktmp = {
         body = "cd (mktemp -d) ";
+      };
+      conf-helix = {
+        body = "hx ~/.config/helix/config.toml";
       };
     };
   };
@@ -199,7 +202,9 @@
     pkgs.hyperfine
     pkgs.hexyl
     pkgs.glow
-    pkgs.xh
+    pkgs.gum
+    pkgs.zellij
+    pkgs.zoxide
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
