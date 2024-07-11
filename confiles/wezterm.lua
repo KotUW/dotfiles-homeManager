@@ -1,10 +1,4 @@
 local wezterm = require 'wezterm'
--- local mux = wezterm.mux
-
--- wezterm.on('gui-startup', function(cmd)
---   local tab, pane, window = mux.spawn_window(cmd or {})
---   window:gui_window():maximize()
--- end)
 
 local config = {}
 
@@ -15,23 +9,21 @@ end
 -- Font
 config.font = wezterm.font('Fira Code')
 -- config.font = wezterm.font('LiterationMono Nerd Font')
--- config.harfbuzz_features = { "zero" , "ss01", "cv05" }
+config.harfbuzz_features = { "zero" , "ss01", "cv05" }
 
-config.font_size = 18
+config.font_size = 20
 
 -- Tab bar
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_bar_at_bottom= true
-config.window_frame = { font = font }
 
 config.color_schemes = {
-		["Gnome Light"] = require("gnome"),
 		["Charmful Dark"] = require("charmful"),
-	}
--- config.color_scheme = 'Alabaster'
-config.color_scheme = "Charmful Dark"
--- color_scheme = "Dark Pastel"
--- color_scheme = "carbonfox"
+}
+
+-- config.color_scheme = "Charmful Dark"
+-- config.color_scheme = "Dark Pastel"
+config.color_scheme = "carbonfox"
 -- color_scheme = "DotGov"
 
 -- KeyBindings
@@ -46,7 +38,7 @@ config.keys = {
    
     { key = 'Tab', mods = 'CTRL|SHIFT', action = wezterm.action.ActivateLastTab },
     { key = 'x', mods = 'CTRL|SHIFT', action = wezterm.action.ActivateCopyMode },
-    -- { key = ' ', mods = 'CTRL|SHIFT', action = wezterm.action.QuickSelect },
+    { key = ' ', mods = 'CTRL|SHIFT', action = wezterm.action.QuickSelect },
     
     { key = "c", mods = 'CTRL|SHIFT', action = wezterm.action.CopyTo 'Clipboard' },
     { key = "v", mods = 'CTRL|SHIFT', action = wezterm.action.PasteFrom'Clipboard' },
@@ -71,35 +63,5 @@ config.default_prog = {"/home/evil/.nix-profile/bin/fish", "-l"}
 
 config.enable_kitty_keyboard = true
 
-  -- config.colors = {
-  -- foreground    = "#ECE1D7",
-  -- background    = "#292522",
-  -- cursor_bg     = "#ECE1D7",
-  -- cursor_border = "#ECE1D7",
-  -- cursor_fg     = "#292522",
-  -- selection_bg  = "#403A36",
-  -- selection_fg  = "#ECE1D7",
-  -- ansi = {
-  --   "#34302C",
-  --   "#BD8183",
-  --   "#78997A",
-  --   "#E49B5D",
-  --   "#7F91B2",
-  --   "#B380B0",
-  --   "#7B9695",
-  --   "#C1A78E"
-  -- },
-  -- brights = {
-  --   "#867462",
-  --   "#D47766",
-  --   "#85B695",
-  --   "#EBC06D",
-  --   "#A3A9CE",
-  --   "#CF9BC2",
-  --   "#89B3B6",
-  --   "#ECE1D7",
-  -- }
-
--- }
 
 return config

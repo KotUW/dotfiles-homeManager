@@ -58,11 +58,14 @@
       conf-home = {
         body = "hx ~/.config/home-manager/home.nix";
       };
-      mktmp = {
-        body = "cd (mktemp -d) ";
-      };
       conf-helix = {
         body = "hx ~/.config/helix/config.toml";
+      };
+      from-down = {
+        body = "mv (find ~/Downloads -type f | fzf) .";
+      };
+      from-down-folder = {
+        body = "mv -r (find ~/Downloads -type d | fzf) .";
       };
     };
   };
@@ -205,6 +208,8 @@
     pkgs.gum
     pkgs.zellij
     pkgs.zoxide
+    pkgs.watchexec
+    pkgs.yazi
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -226,6 +231,7 @@
     "wezterm/charmful.lua".source = ./confiles/charmful.lua;
     "wezterm/charmful.lua".enable = true;
     # "kitty/kitty.conf".source = ./confiles/kitty.conf;
+    # "kitty/kitty.conf".enable = true;
     "foot/foot.ini".source = ./confiles/foot.ini;
   };
   # Doesn't work with flatpak version. And that is also not recommended.
