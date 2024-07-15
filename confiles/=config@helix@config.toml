@@ -1,0 +1,24 @@
+theme = "github_dark"
+
+[editor]
+cursorline = true
+color-modes = true
+bufferline = "multiple" 
+auto-save = true
+auto-format = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+# "A-/" = "toggle_comments"
+"C-/" = "toggle_comments"
+"C-c" = "no_op"
+

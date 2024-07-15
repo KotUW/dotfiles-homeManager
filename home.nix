@@ -49,6 +49,7 @@
       c = "clear";
       cat = "bat";
       lg = "gitui";
+      dotship = "python3 ~/work/proj/dotman/main.py -c ~/.config/home-manager/confiles/"
     };
 
     functions = {
@@ -230,13 +231,10 @@
 
   xdg.configFile = {
   # NOTE don't use flatpak version of wezterm.
-    "wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
-    "wezterm/wezterm.lua".enable = true;
-    "wezterm/charmful.lua".source = ./confiles/charmful.lua;
-    "wezterm/charmful.lua".enable = true;
-    # "kitty/kitty.conf".source = ./confiles/kitty.conf;
-    # "kitty/kitty.conf".enable = true;
-    "foot/foot.ini".source = ./confiles/foot.ini;
+    # "wezterm/wezterm.lua".source = ./confiles/wezterm.lua;
+    # "wezterm/wezterm.lua".enable = true;
+    # "wezterm/charmful.lua".source = ./confiles/charmful.lua;
+    # "wezterm/charmful.lua".enable = true;
   };
   # Doesn't work with flatpak version. And that is also not recommended.
 

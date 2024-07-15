@@ -1,0 +1,58 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Andromeda"
+  },
+  // "base_keymap": "SublimeText",
+  "ui_font_size": 19,
+  "buffer_font_size": 27,
+  "buffer_font_family": "JetBrains Mono",
+  "soft_wrap": "editor_width",
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "indent_guides": {
+    "coloring": "indent_aware"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "dock": "left"
+  },
+  "assistant": {
+    "version": "1",
+    "enabled": false,
+    "dock": "left"
+  },
+  "autosave": "on_focus_change",
+  "journal": {
+    "path": "~/work/sync",
+    "hour_format": "hour24"
+  },
+  "terminal": {
+    "shell": {
+      "program": "/home/evil/.nix-profile/bin/fish"
+    },
+    "copy_on_select": true,
+    "env": {
+      "EDITOR": "zed"
+    }
+  },
+  "auto_update": true
+}
