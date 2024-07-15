@@ -13,7 +13,7 @@
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # Please read the comment before changing.
 
   programs.foot = {
     enable = true;
@@ -149,7 +149,6 @@
   
   programs.eza = {
       enable = true;
-      enableAliases = true;
   };
     programs.zellij = {
         enable = false;
@@ -191,6 +190,11 @@
         status_reset_item: Some((code: Char('d'), modifiers: (bits: 0,),)),
       )
     '';
+  };
+
+    nix = {
+    package = pkgs.nix;
+    settings.experimental-features = [ "nix-command" "flakes" ];
   };
 
   home.packages = [
