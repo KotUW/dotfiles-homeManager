@@ -16,7 +16,7 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   programs.foot = {
-    enable = true;
+    enable = false;
   };
 
   programs.btop = {
@@ -42,6 +42,14 @@
       # fileWidgetCommand = "fd --type f";
   };
 
+  programs.atuin = {
+    enable = false;
+    # enableFishIntegration = true;
+    settings = {
+      enter_accept = false; 
+    };
+  };
+
   programs.fish = {
     enable = true;
     shellAbbrs = {
@@ -49,7 +57,7 @@
       c = "clear";
       cat = "bat";
       lg = "gitui";
-      dotship = "python3 ~/work/proj/dotman/main.py -c ~/.config/home-manager/confiles/"
+      dotship = "python3 ~/work/proj/dotman/main.py -c ~/.config/home-manager/confiles/";
     };
 
     functions = {
@@ -200,7 +208,7 @@
 
   home.packages = [
     pkgs.just
-    pkgs.rustup
+    # pkgs.rustup
     pkgs.go
     pkgs.nil # maybe move to helix-extra-packages?
     pkgs.gopls# maybe move to helix-extra-packages?

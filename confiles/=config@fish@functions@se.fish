@@ -19,7 +19,7 @@ function se -d "Search ddg, opens firefox with your search term"
     end
     set -l query (string replace -a " " "+" $input)
 
-    firefox-dev "https://duckduckgo.com?q="$query & disown
+    ff "https://duckduckgo.com?q="$query & disown
 end
 
 function ai -d "Search ddg, opens firefox with your search term"
@@ -30,5 +30,5 @@ function ai -d "Search ddg, opens firefox with your search term"
     end
     set -l query (string replace -a " " "+" $input)
 
-    firefox-dev "https://duckduckgo.com?q=!chat+"$query & disown
+    ff "https://duckduckgo.com?q=!chat+"$query & disown
 end

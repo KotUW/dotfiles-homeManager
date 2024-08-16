@@ -36,7 +36,7 @@
     "dock": "left"
   },
   "assistant": {
-    "version": "1",
+    "version": "2",
     "enabled": false,
     "dock": "left"
   },
