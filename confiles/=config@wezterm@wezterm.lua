@@ -7,9 +7,10 @@ if wezterm.config_builder then
 end
 
 -- Font
-config.font = wezterm.font('Fira Code')
+config.font = wezterm.font('Rec Mono Casual')
+-- config.font = wezterm.font('Fira Code')
 -- config.font = wezterm.font('LiterationMono Nerd Font')
-config.harfbuzz_features = { "zero" , "ss01", "cv05" }
+-- config.harfbuzz_features = { "zero" , "ss01", "cv05" }
 
 config.font_size = 20
 
@@ -21,9 +22,9 @@ config.color_schemes = {
 		["Charmful Dark"] = require("charmful"),
 }
 
--- config.color_scheme = "Charmful Dark"
+config.color_scheme = "Charmful Dark"
 -- config.color_scheme = "Dark Pastel"
-config.color_scheme = "carbonfox"
+-- config.color_scheme = "carbonfox"
 -- color_scheme = "DotGov"
 
 -- KeyBindings
@@ -61,6 +62,7 @@ config.default_prog = {"/home/evil/.nix-profile/bin/fish", "-l"}
 
 -- config.adjust_window_size_when_changing_font_size = false
 
+config.enable_wayland = false
 config.enable_kitty_keyboard = true
 
 
