@@ -1,0 +1,61 @@
+[[language]]
+name = "markdown"
+language-servers = [{ name = "ltex"}]
+file-types = ["md", "txt", "adoc"]
+scope = "text.markdown"
+roots = []
+
+[[language]]
+name = "zig"
+formatter = {command = "zig", args = ["fmt"]}
+
+[[language]]
+name = "python"
+formatter = {command = "ruff", args = ["format"]}
+language-servers = ["ruff"]
+
+[language-server.ruff]
+command = "ruff"
+args = ["server", "--preview" ]
+
+[language-server.pyls]
+command = "pyls"
+
+[language-server.ltex]
+command = "/home/evil/work/19_opt/ltex-ls/ltex-ls-16.0.0/bin/ltex-ls"
+
+[language-server.ltex.config.ltex.dictionary]
+"en-US" = ["Tp-Note","Zettelkasten"]
+
+[[language]]
+name = "javascript"
+language-servers = ["deno-lsp"]
+shebangs = ["bun", "deno", "node"]
+
+[[language]]
+name = "typescript"
+shebangs = ["bun", "deno", "node"]
+roots = ["package.json"]
+file-types = ["ts"]
+auto-format = true
+language-servers = ["bun-lsp"]
+
+[language-server.bun-lsp]
+command = "bunx"
+args = ["--bun", "typescript-language-server", "lsp", "--stdio"]
+config.preference.includeInlayVariableTypeHints = true
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+
+[language-server.deno-lsp.config.deno]
+enable = true
+unstable = true
+suggest.imports.hosts = { "https://deno.land" = true }
+# inlayHints.parameterNames.enabled = "all"
+# inlayHints.parameterTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+inlayHints.propertyDeclarationTypes.enabled  = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.enumMemberValues.enabled = true
