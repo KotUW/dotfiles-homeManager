@@ -42,14 +42,6 @@
       # fileWidgetCommand = "fd --type f";
   };
 
-  programs.atuin = {
-    enable = false;
-    # enableFishIntegration = true;
-    settings = {
-      enter_accept = false; 
-    };
-  };
-
   programs.fish = {
     enable = true;
     shellAbbrs = {
@@ -222,6 +214,8 @@
     pkgs.zellij
     pkgs.zoxide
     pkgs.watchexec
+    pkgs.fnm
+    pkgs.xh
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
