@@ -1,4 +1,5 @@
 {
+  "vim_mode": false,
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -15,7 +16,7 @@
   // "base_keymap": "SublimeText",
   "ui_font_size": 19,
   "buffer_font_size": 22,
-  "buffer_font_family": "JetBrains Mono",
+  // "buffer_font_family": "JetBrains Mono",
   "soft_wrap": "editor_width",
   "indent_guides": {
     "coloring": "indent_aware"
@@ -56,6 +57,27 @@
   "inlay_hints": {
     "enabled": true
   },
+
+  "languages": {
+    "Python": {
+      // "language_servers": ["ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+
   "lsp": {
     "typescript-language-server": {
       "initialization_options": {
