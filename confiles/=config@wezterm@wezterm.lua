@@ -12,7 +12,7 @@ config.font = wezterm.font('Rec Mono Casual')
 -- config.font = wezterm.font('LiterationMono Nerd Font')
 -- config.harfbuzz_features = { "zero" , "ss01", "cv05" }
 
-config.font_size = 20
+config.font_size = 17
 
 -- Tab bar
 config.hide_tab_bar_if_only_one_tab = true
