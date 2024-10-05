@@ -49,7 +49,6 @@
       c = "clear";
       cat = "bat";
       lg = "gitui";
-      dotship = "python3 ~/work/proj/dotman/main.py -c ~/.config/home-manager/confiles/";
     };
 
     functions = {
