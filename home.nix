@@ -200,6 +200,7 @@
   home.packages = [
     pkgs.just
     # pkgs.rustup
+    pkgs.recursive # Very good fonts
     pkgs.go
     pkgs.nil # maybe move to helix-extra-packages?
     pkgs.gopls# maybe move to helix-extra-packages?
