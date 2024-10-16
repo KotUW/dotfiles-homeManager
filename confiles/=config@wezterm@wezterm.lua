@@ -7,12 +7,12 @@ if wezterm.config_builder then
 end
 
 -- Font
-config.font = wezterm.font('Rec Mono Casual')
+config.font = wezterm.font('RecMonoCasual Nerd Font')
 -- config.font = wezterm.font('Fira Code')
 -- config.font = wezterm.font('LiterationMono Nerd Font')
 -- config.harfbuzz_features = { "zero" , "ss01", "cv05" }
 
-config.font_size = 17
+config.font_size = 10
 
 -- Tab bar
 config.hide_tab_bar_if_only_one_tab = true
@@ -58,7 +58,7 @@ config.keys = {
 }
 
 -- Starts home-manager managed nix shell.
-config.default_prog = {"/home/evil/.nix-profile/bin/fish", "-l"}
+config.default_prog = {"fish"}
 
 -- config.adjust_window_size_when_changing_font_size = false
 
