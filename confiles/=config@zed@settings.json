@@ -14,8 +14,8 @@
     "dark": "Rosé Pine"
   },
   // "base_keymap": "SublimeText",
-  "ui_font_size": 19,
-  "buffer_font_size": 22,
+  "ui_font_size": 12,
+  "buffer_font_size": 14,
   // "buffer_font_family": "JetBrains Mono",
   "soft_wrap": "editor_width",
   "indent_guides": {
@@ -87,5 +87,5 @@
       }
     }
   },
-  "auto_update": true
+  "auto_update": false
 }
