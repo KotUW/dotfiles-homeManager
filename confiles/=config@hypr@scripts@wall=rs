@@ -1,0 +1,56 @@
+#!/home/eve/.cargo/bin/rust-script
+
+//! Wallpaper changer in rust!
+//!
+//!
+//! ```cargo
+//! [dependencies]
+//! time = "0.1"
+//! rand = "0.8.5"
+//! notify-rust = "4"
+//! ```
+
+use notify_rust::Notification;
+use rand::Rng;
+use std::fs;
+use std::process::Command;
+
+fn list_walls(path: &str) -> Result<Vec<String>, std::io::Error> {
+    let mut wallpapers = Vec::new();
+
+    for entry in fs::read_dir(path)? {
+        let entry = entry?;
+        let file_path = entry.path();
+
+        if file_path.is_file() {
+            if let Some(absolute_path) = file_path.to_str() {
+                wallpapers.push(absolute_path.to_string());
+            }
+        }
+    }
+
+    Ok(wallpapers)
+}
+
+fn main() {
+    let walls = match list_walls("/home/eve/Pictures/wall/") {
+        Ok(wall) => wall,
+        Err(err) => panic!("Error: Listing Dir. {err:?}"),
+    };
+
+    let rand_index = rand::thread_rng().gen_range(0..walls.len());
+    let wallpaper = &walls[rand_index];
+    // println!("Random choosen wall is: {}", wallpaper);
+
+    Notification::new()
+        .summary("Wall Chanege!")
+        .body("-> {wallpaper}")
+        .icon("rust")
+        .show()
+        .unwrap();
+
+    let _ = Command::new("swww")
+        .args(["img", "-t", "any", wallpaper])
+        .output()
+        .unwrap();
+}
