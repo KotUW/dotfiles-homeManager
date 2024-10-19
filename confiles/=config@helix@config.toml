@@ -4,7 +4,6 @@ theme = "github_dark"
 cursorline = true
 color-modes = true
 bufferline = "multiple" 
-auto-save = true
 auto-format = true
 
 [editor.lsp]
