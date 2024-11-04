@@ -47,6 +47,8 @@ $menu = fuzzel
 
 exec-once = swww-daemon && ~/.config/hypr/scripts/wall.rs
 exec-once = waybar 
+exec-once = swaync 
+exec-once = hypridle
 
 #############################
 ### ENVIRONMENT VARIABLES ###
@@ -54,8 +56,11 @@ exec-once = waybar
 
 # See https://wiki.hyprland.org/Configuring/Environment-variables/
 
-env = XCURSOR_SIZE,10
-env = HYPRCURSOR_SIZE,5
+env = XCURSOR_SIZE,15
+# env = HYPRCURSOR_SIZE,10
+env = GTK_THEME,Adwaita:dark
+env = GTK2_RC_FILES,/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+env = QT_STYLE_OVERRIDE,Adwaita-Dark
 
 
 #####################
@@ -136,8 +141,8 @@ master {
 
 # https://wiki.hyprland.org/Configuring/Variables/#misc
 misc {
-    vfr = true
-    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
+    vfr = false
+    force_default_wallpaper = 1 # Set to 0 or 1 to disable the anime mascot wallpapers
     disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
 }
 
@@ -148,11 +153,11 @@ misc {
 
 # https://wiki.hyprland.org/Configuring/Variables/#input
 input {
-    kb_layout = us
-    kb_variant =
-    kb_model =
-    kb_options =
-    kb_rules =
+    kb_layout = us,us
+    kb_variant = ,colemak_dh
+    kb_model = pc105, pc105    
+    kb_options = caps:shiftcap ,caps:escape_shifted_capslock
+    # kb_rules = caps:shiftlock
 
     follow_mouse = 1
 
@@ -184,15 +189,17 @@ device {
 $mainMod = SUPER # Sets "Windows" key as main modifier
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-bind = $mainMod, N, exec, $terminal
+bind = $mainMod, return, exec, $terminal
 bind = $mainMod, C, killactive,
-bind = $mainMod, Q, exit,
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, V, togglefloating,
-bind = $mainMod, R, exec, $menu
+bind = $mainMod, space, exec, $menu
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod, W, exec, ~/.config/hypr/scripts/wall.rs
+bind = $mainMod, L, exec, systemctl suspend && hyprlock
+bind = , PRINT, exec, hyprshot -m window
+bind = SHIFT, PRINT, exec, hyprshot -m window
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l

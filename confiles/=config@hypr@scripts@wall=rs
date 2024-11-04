@@ -5,7 +5,6 @@
 //!
 //! ```cargo
 //! [dependencies]
-//! time = "0.1"
 //! rand = "0.8.5"
 //! notify-rust = "4"
 //! ```

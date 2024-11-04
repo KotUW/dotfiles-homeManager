@@ -10,10 +10,10 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Mocha",
+    "light": "Gruvbox Dark Hard",
     "dark": "Rosé Pine"
   },
-  // "base_keymap": "SublimeText",
+  "base_keymap": "SublimeText",
   "ui_font_size": 17,
   "buffer_font_size": 20,
   // "buffer_font_family": "JetBrains Mono",
@@ -42,7 +42,7 @@
   },
   "terminal": {
     "shell": {
-      "program": "/home/evil/.nix-profile/bin/fish"
+      "program": "fish"
     },
     "copy_on_select": true,
     "env": {
@@ -60,7 +60,7 @@
 
   "languages": {
     "Python": {
-      // "language_servers": ["ruff"],
+      "language_servers": ["ruff"],
       "format_on_save": "on",
       "formatter": [
         {
@@ -87,5 +87,5 @@
       }
     }
   },
-  "auto_update": false
+  "auto_update": true
 }

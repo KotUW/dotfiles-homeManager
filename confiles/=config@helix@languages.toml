@@ -1,13 +1,13 @@
-[[language]]
-name = "markdown"
-language-servers = [{ name = "ltex"}]
-file-types = ["md", "txt", "adoc"]
-scope = "text.markdown"
-roots = []
+# [[language]]
+# name = "markdown"
+# language-servers = [{ name = "ltex"}]
+# file-types = ["md", "txt", "adoc"]
+# scope = "text.markdown"
+# roots = []
 
-[[language]]
-name = "zig"
-formatter = {command = "zig", args = ["fmt"]}
+# [[language]]
+# name = "zig"
+# formatter = {command = "zig", args = ["fmt"]}
 
 [[language]]
 name = "python"
@@ -21,11 +21,21 @@ args = ["server", "--preview" ]
 [language-server.pyls]
 command = "pyls"
 
-[language-server.ltex]
-command = "/home/evil/work/19_opt/ltex-ls/ltex-ls-16.0.0/bin/ltex-ls"
+# [language-server.ltex]
+# command = "/home/evil/work/19_opt/ltex-ls/ltex-ls-16.0.0/bin/ltex-ls"
 
-[language-server.ltex.config.ltex.dictionary]
-"en-US" = ["Tp-Note","Zettelkasten"]
+# [language-server.ltex.config.ltex.dictionary]
+# "en-US" = ["Tp-Note","Zettelkasten"]
+
+[[language]]
+name = "svelte"
+language-servers = ["bun-svelte"]
+formatter = {command = "bun", args = ["run", "format"]}
+
+[language-server.bun-svelte]
+command = "bunx"
+args = ["svelte-language-server" ]
+config.preference.includeInlayVariableTypeHints = true
 
 [[language]]
 name = "javascript"
