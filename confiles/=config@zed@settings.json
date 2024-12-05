@@ -3,7 +3,7 @@
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2",
     "dock": "left"
@@ -13,7 +13,7 @@
     "light": "Gruvbox Dark Hard",
     "dark": "Rosé Pine"
   },
-  "base_keymap": "SublimeText",
+  // "base_keymap": "SublimeText",
   "ui_font_size": 17,
   "buffer_font_size": 20,
   // "buffer_font_family": "JetBrains Mono",
@@ -22,7 +22,7 @@
     "coloring": "indent_aware"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "outline_panel": {
     "dock": "right"
@@ -30,9 +30,9 @@
   "notification_panel": {
     "dock": "left"
   },
-  "autosave": "on_focus_change",
+  // "autosave": "on_focus_change",
   "journal": {
-    "path": "~/work/sync",
+    "path": "~/w/sync",
     "hour_format": "hour24"
   },
   "jupyter": {

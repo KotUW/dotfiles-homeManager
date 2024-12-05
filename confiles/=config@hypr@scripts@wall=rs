@@ -1,8 +1,5 @@
 #!/home/eve/.cargo/bin/rust-script
 
-//! Wallpaper changer in rust!
-//!
-//!
 //! ```cargo
 //! [dependencies]
 //! rand = "0.8.5"

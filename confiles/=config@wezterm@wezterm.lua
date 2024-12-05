@@ -8,11 +8,12 @@ end
 
 -- Font
 config.font = wezterm.font('Rec Mono Casual')
--- config.font = wezterm.font('Fira Code')
+-- config.font = wezterm.font('JetBrains Mono')
+
 -- config.font = wezterm.font('LiterationMono Nerd Font')
 -- config.harfbuzz_features = { "zero" , "ss01", "cv05" }
 
-config.font_size = 14
+config.font_size = 18
 -- config.dpi = 125.0
 
 -- Tab bar
@@ -25,8 +26,8 @@ config.color_schemes = {
 
 -- config.color_scheme = "Charmful Dark"
 -- config.color_scheme = "Dark Pastel"
--- config.color_scheme = "carbonfox"
-color_scheme = "DotGov"
+config.color_scheme = "carbonfox"
+-- color_scheme = "DotGov"
 
 -- KeyBindings
 config.disable_default_key_bindings = false
@@ -63,7 +64,7 @@ config.default_prog = {"fish"}
 
 -- config.adjust_window_size_when_changing_font_size = false
 
--- config.enable_wayland = true
+config.enable_wayland = true
 config.enable_kitty_keyboard = true
 
 
