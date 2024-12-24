@@ -41,9 +41,11 @@
     }
   },
   "terminal": {
-    "shell": {
-      "program": "fish"
-    },
+    // "shell": {
+    // "program": "fish"
+    // },
+    "font_family": "Symbols Nerd Font Mono",
+    "font_fallbacks": ["Zed Plex Mono"],
     "copy_on_select": true,
     "env": {
       "EDITOR": "zed"
