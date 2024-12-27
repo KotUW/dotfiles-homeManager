@@ -1,4 +1,2 @@
-keybind = ctrl+d=new_split:right
-
 theme = "catppuccin-mocha"
 font-size = 20.5
