@@ -12,14 +12,15 @@
 [[language]]
 name = "python"
 formatter = {command = "ruff", args = ["format"]}
-language-servers = ["ruff"]
+language-servers = ["pyright"]
 
 [language-server.ruff]
 command = "ruff"
 args = ["server", "--preview" ]
 
-[language-server.pyls]
-command = "pyls"
+[language-server.pyright]
+command = "basedpyright-langserver"
+args = ["--stdio" ]
 
 # [language-server.ltex]
 # command = "/home/evil/work/19_opt/ltex-ls/ltex-ls-16.0.0/bin/ltex-ls"
