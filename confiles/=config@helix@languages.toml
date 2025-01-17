@@ -5,14 +5,11 @@
 # scope = "text.markdown"
 # roots = []
 
-# [[language]]
-# name = "zig"
-# formatter = {command = "zig", args = ["fmt"]}
-
 [[language]]
 name = "python"
 formatter = {command = "ruff", args = ["format"]}
-language-servers = ["pyright"]
+language-servers = ["ruff"]
+
 
 [language-server.ruff]
 command = "ruff"

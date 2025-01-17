@@ -3,24 +3,29 @@
 )
 
 (defsrc
-  caps f   i
-         j k l
+  esc
+  caps a s f   i
+         h j k l
   lshft rshft  
 )
 
 (deflayer default
-  @cap @arr   _
-            _ _ _
+  caps
+  @cap @alt-a @shift-s @arr   _
+           _ _ _ _
   _ _
 )
 
 (deflayer arrows
-  _ _   up
-      left down right
+  _
+  _ _ _ _  _
+      left up down right
   _ _  
 ) 
 
 (defalias 
-  cap (tap-hold-press 200 200 esc lctrl)
-  arr (tap-hold-press 200 200 f (layer-toggle arrows))  
+  cap (tap-hold-press 0 200 esc lctrl)
+  arr (tap-hold-press 0 200 f (layer-toggle arrows))  
+  shift-s (tap-hold-press 0 200 s lshift)  
+  alt-a (tap-hold 0 200 a lalt)
 )

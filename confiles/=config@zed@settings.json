@@ -46,9 +46,7 @@
     }
   },
   "show_inline_completions": false,
-  "features": {
-    "inline_completion_provider": "supermaven"
-  },
+  "features": {},
 
   "inlay_hints": {
     "enabled": true
