@@ -1,6 +1,10 @@
 {
   "vim_mode": false,
   "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "o1-mini"
+    },
     "version": "2",
     "dock": "left"
   },
@@ -53,6 +57,9 @@
   },
 
   "languages": {
+    "Perl": {
+      "show_inline_completions": true
+    },
     "Python": {
       "language_servers": ["basedpyright"],
       "format_on_save": "on",
