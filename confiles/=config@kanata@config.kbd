@@ -4,21 +4,24 @@
 
 (defsrc
   esc
-  caps a s f   i
+  i
+  caps a s f   
          h j k l
   lshft rshft  
 )
 
 (deflayer default
   caps
-  @cap @alt-a @shift-s @arr   _
+  _
+  @cap @alt-a @shift-s @arr 
            _ _ _ _
   _ _
 )
 
 (deflayer arrows
   _
-  _ _ _ _  _
+  _
+  _ _ _ _  
       left up down right
   _ _  
 ) 

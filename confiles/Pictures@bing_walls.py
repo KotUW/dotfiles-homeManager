@@ -8,13 +8,16 @@ api_url = f"http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n={num_of_im
 
 home = os.getenv("HOME")
 cache_path:str = ""
+save_path:str = ""
 if home is not None:
     cache_path = home+"/Pictures/walls.txt"
+    save_path = home+"/Pictures/wall/"
 
+if not os.path.exists(save_path):
+    print(f"save path {save_path} doesn't exist. Please create or change the above variable to it.")
 if not os.path.exists(cache_path):
     with open(cache_path, 'w') as file:
         print("Couldn't find the hash  file\n Assuming first run. creating it.")
-    file.close()
 
 hsh_files:list[str] = []
 lines = ''
@@ -24,7 +27,6 @@ with open(cache_path, 'r') as fcf:
 
 if len(lines) < 2:
     print("Weird bug")
-    # exit(2)
 
 for line in lines.split('\n'):
     hash = line.strip()
@@ -41,7 +43,7 @@ for obj in images:
         continue
 
     dwn_url:str = "http://bing.com"+obj['url']
-    filename = "wall/"+str(obj['title']).replace(' ', '_')+'.jpg'
+    filename = save_path+str(obj['title']).replace(' ', '_')+'.jpg'
     path, _ = urlretrieve(dwn_url, filename)
     print("Downloaded ", obj['hsh'], " => ", path)
     new_hsh.append(obj['hsh'])

@@ -14,7 +14,9 @@ if (!-e $lock_file || (-M $lock_file) > 5) {
     update_distro();
     update_flatpak();
     update_uv();
-}
+} else {
+    print RED, "Lockfile is still younger, Please wait ", (5 - (-M $lock_file))*60, " hours.\n", RESET;
+    }
 
 sub update_uv {
     print UNDERLINE, "Updating UV python tools\n", RESET;
@@ -42,7 +44,7 @@ sub update_distro {
 }
 
 sub update_flatpak {
-    print UNDERLINE, "Updating distro\n", RESET;
+    print UNDERLINE, "Updating Flatpacks\n", RESET;
     if (not command_exists("flatpak")) {
         print "flatpak not found";
         return;
@@ -55,7 +57,7 @@ sub touch_lock{
     open my $fh , '>', $lock_file or die "Cannot open lock file: $!";
     print $fh "lock";
     close $fh;
-    print "lock file modified";
+    print "lock file modified\n";
 }
 
 sub command_exists {

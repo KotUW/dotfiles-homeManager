@@ -1,3 +1,4 @@
 theme = light:"Monokai Pro Light Sun",dark:"MaterialDesignColors"
 font-size = 18
 gtk-tabs-location=bottom
+keybind = performable:super+k=copy_url_to_clipboard

@@ -1,5 +1,20 @@
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
 [init]
 	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
@@ -8,4 +23,15 @@
 	email = 46974369+KotUW@users.noreply.github.com
 	name = kotuw
 [help]
-	autoCorrect = 5
+	autoCorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[core]
+	excludesfile = ~/.gitconfig
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true

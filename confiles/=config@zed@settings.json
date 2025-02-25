@@ -50,7 +50,9 @@
     }
   },
   "show_inline_completions": false,
-  "features": {},
+  "features": {
+        "edit_prediction_provider": "zed"
+    },
 
   "inlay_hints": {
     "enabled": true
