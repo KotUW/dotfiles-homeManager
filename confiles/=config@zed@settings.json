@@ -1,9 +1,10 @@
 {
+  "icon_theme": "Material Icon Theme",
   "vim_mode": false,
   "assistant": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "o1-mini"
+      "provider": "zed.dev",
+      "model": "o3-mini"
     },
     "version": "2",
     "dock": "left"
@@ -11,7 +12,7 @@
   "theme": {
     "mode": "system",
     "light": "Gruvbox Dark Hard",
-    "dark": "Ayu Dark"
+    "dark": "Catppuccin Mocha"
   },
   "ui_font_size": 17,
   "buffer_font_size": 20,
@@ -29,30 +30,27 @@
   "notification_panel": {
     "dock": "left"
   },
-  "autosave": "on_window_change",
+  "autosave": "on_focus_change",
   "journal": {
     "path": "~/w/sync",
     "hour_format": "hour24"
   },
-  "jupyter": {
-    "kernel_selections": {
-      "python": "python3"
-    }
-  },
+  // "jupyter": {
+  //   "kernel_selections": {
+  //     "python": "python3"
+  //   }
+  // },
   "terminal": {
-    // "shell": {
-    // "program": "fish"
-    // },
     "font_fallbacks": ["Zed Plex Mono"],
     "copy_on_select": true,
     "env": {
       "EDITOR": "zed"
     }
   },
-  "show_inline_completions": false,
+  "show_edit_predictions": false,
   "features": {
-        "edit_prediction_provider": "zed"
-    },
+    "edit_prediction_provider": "zed"
+  },
 
   "inlay_hints": {
     "enabled": true
@@ -60,16 +58,22 @@
 
   "languages": {
     "Perl": {
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "Python": {
       "language_servers": ["basedpyright"],
+      // "language_servers": ["ruff"],
       "format_on_save": "on",
       "formatter": [
         {
           "code_actions": {
             "source.organizeImports.ruff": true,
             "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
           }
         }
       ]

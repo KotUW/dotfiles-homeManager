@@ -8,12 +8,12 @@
 [[language]]
 name = "python"
 formatter = {command = "ruff", args = ["format"]}
-language-servers = ["ruff"]
+language-servers = ["basedpyright"]
 
 
 [language-server.ruff]
 command = "ruff"
-args = ["server", "--preview" ]
+args = ["server" ]
 
 [language-server.pyright]
 command = "basedpyright-langserver"

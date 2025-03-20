@@ -1,0 +1,4 @@
+function from-down --wraps='mv ( echo "$HOME/Downloads/"(ls ~/Downloads | fzf --layout reverse-list)) .' --description 'alias from-down mv ( echo "$HOME/Downloads/"(ls ~/Downloads | fzf --layout reverse-list)) .'
+  mv ( echo "$HOME/Downloads/"(ls ~/Downloads | fzf --layout reverse-list)) . $argv
+        
+end
