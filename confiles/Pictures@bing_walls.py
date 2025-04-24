@@ -28,7 +28,7 @@ with open(cache_path, "r") as fcf:
     fcf.close()
 
 if len(lines) < 2:
-    print("Weird bug")
+    raise Exception("Weird bug!!")
 
 for line in lines.split("\n"):
     hash = line.strip()

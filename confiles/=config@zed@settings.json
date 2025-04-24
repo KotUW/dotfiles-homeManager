@@ -3,8 +3,8 @@
   "vim_mode": false,
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "o3-mini"
+      "provider": "copilot_chat",
+      "model": "claude-3-7-sonnet"
     },
     "version": "2",
     "dock": "left"
@@ -12,7 +12,7 @@
   "theme": {
     "mode": "system",
     "light": "Gruvbox Dark Hard",
-    "dark": "Catppuccin Mocha"
+    "dark": "Ayu Dark"
   },
   "ui_font_size": 17,
   "buffer_font_size": 20,
@@ -57,6 +57,9 @@
   },
 
   "languages": {
+    "Go": {
+      "show_edit_predictions": false
+    },
     "Perl": {
       "show_edit_predictions": true
     },

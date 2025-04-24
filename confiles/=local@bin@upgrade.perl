@@ -41,6 +41,8 @@ sub update_distro {
 
     print UNDERLINE, "Removing unwanted packages\n", RESET;
     system("sudo pacman -Rns \$(pacman -Qdtq) --noconfirm");
+
+    print BOLD, "\nThis don't touch AUR.\n", RESET;
 }
 
 sub update_flatpak {
@@ -50,6 +52,9 @@ sub update_flatpak {
         return;
     }
     system("flatpak upgrade --noninteractive");
+
+    print UNDERLINE, "Removing unwanted packages\n", RESET;
+    system("flatpak uninstall --unused --delete-data");
 }
 
 # create lock file or modify acces time of the lockfile

@@ -1,4 +1,4 @@
-theme = light:"Monokai Pro Light Sun",dark:"Andromeda"
+theme = light:"Afterglow",dark:"arcoiris"
 font-size = 18
-gtk-tabs-location=bottom
+gtk-tabs-location=hidden
 keybind = performable:super+k=copy_url_to_clipboard
